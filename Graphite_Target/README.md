@@ -8,3 +8,7 @@ cmake ..
 make
 ./Graphite_Target
 ```
+
+Examples of the run:
+![Proton1](Images/Proton1.png)
+![Proton2](Images/Proton2.png)
