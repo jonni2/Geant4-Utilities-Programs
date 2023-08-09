@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
 
-project(test)
+project(Graphite_Target)
 
 find_package(Geant4 REQUIRED ui_all vis_all)
 
@@ -11,8 +11,8 @@ file(GLOB sources ${PROJECT_SOURCE_DIR}/*.cc)
 file(GLOB headers ${PROJECT_SOURCE_DIR}/*.hh)
 
 
-add_executable(test.exe main.cc ${sources} ${headers})
+add_executable(Graphite_Target main.cc ${sources} ${headers})
 
-target_link_libraries(test.exe ${Geant4_LIBRARIES})
+target_link_libraries(Graphite_Target ${Geant4_LIBRARIES})
 
-add_custom_target(Simulation DEPENDS test.exe)
+add_custom_target(Simulation DEPENDS Graphite_Target)
